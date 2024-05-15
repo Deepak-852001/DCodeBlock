@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-based Compiler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1 style="background-color: rgb(250, 6, 6); text-align: center;">Web-based Compiler</h1>
+        <div>
+            <label for="language" style="color: rgb(255, 0, 0);">Select Language:</label>
+            <select id="language">
+                <option value="solidity">Solidity</option>
+                <option value="rust">Rust</option>
+                <option value="motoko">Motoko</option>
+            </select>
+        </div>
+        <div>
+            <label for="difficulty" style="color: rgb(255, 0, 0);">Select Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <textarea id="code" rows="10" cols="50" placeholder="Write your code here..."></textarea>
+        <div>
+            <button onclick="compileCode()">Run</button>
+        </div>
+       
+        <pre id="output"></pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
